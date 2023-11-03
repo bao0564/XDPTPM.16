@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Admin.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" 
+    integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ==" 
+    ="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>  
+    <div class="container-0">    
+        <div class="head-top">
+            <div id="header">
+                <div>
+                    <div>
+                        <a href="Admin.html" class="logo" style="color: #cd6133;"> MyShop </a>
+                    </div>
+                    <div class="account">
+                        Tài khoản đăng nhập!
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div style="clear:both;height:1px ;background-color: #1e272e;"></div>
+        <div class="menu">
+            <div class="menu-ct">
+                <ul style="padding: 0;"> 
+                    <li><a href="Ad-Home.html">Home</a></li>
+                    <li><a href="Ad-DonHang.html"> Đơn Hàng</a></li>
+                    <li style="background-color: #cd6133;"><a href="Ad-SanPham.html"> Sản Phẩm</a></li>
+                    <li><a href="Ad-DanhMuc.html"> Danh Mục Sản Phẩm</a></li>
+                    <li><a href="Ad-KhachHang.html"> Khách Hàng</a> </li>
+                    <li><a href="Ad-NhanVien.html"> Nhân Viên</a></li>                    
+                    <li><a href="Ad-ChatLieu.html"> Chất Liệu</a></li>
+                    <li><a href="Ad-NhomSanPham.html"> Nhóm Sản Phẩm</a></li>
+                    <li><a href="Ad-Size.html"> Size Sản Phẩm</a></li>
+                    <li><a href="Ad-Fit.html"> Fit</a></li>
+                    <li><a href="Ad-QuangCao.html"> Quảng Cáo</a></li>
+                    <li><a href="Ad-DoanhThu.html"> Doanh Thu</a></li>
+                    <li><a href="Ad-Setting">Cài Đặt Hệ Thống</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-cp">                
+                <div class="cp0"> 
+                    Danh Sách Sản Phẩm
+                </div>                              
+                <div class="h-cp1">
+                    <div class="h-cp-f" >
+                        <div class="h-cp-up">
+                            <div class="bt-c"><a href="Ad-Tao-SanPham.html">Tạo sản phẩm mới</a></div>
+                            <div class="bt-c"><a href="">In dữ liệu </a></div>
+                            <div class="bt-c"><a href="">Xuất Excel</a></div>
+                            <div class="bt-c"><a href="">Xuất PDF</a></div>
+                            <div class="bt-c"><a href="">Xóa Tất cả</a></div>
+                        </div>      
+                        <div style="clear:both;height:1px ;background-color: #c4c4c4;"></div>
+                        <div class="h-cp-mid">
+                            <div>
+                                <input class="form-search" type="text" placeholder="Tìm Kiếm Mã Sản phẩm/ Tên sản phẩm . . ." >
+                            </div>
+                            <table class="h-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width:6%;">Mã SP</th>
+                                        <th style="width: 20%;">Tên SP</th>
+                                        <th style="width: 15% ;">Ảnh </th>
+                                        <th style="width: 6% ;">Giá</th>
+                                        <th style="width:21% ;">Mô tả</th>
+                                        <th style="width:6% ;">Mã DM</th>
+                                        <th style="width:6% ;">Id Nhóm</th>
+                                        <th style="width:10% ;">Giới Tính</th>
+                                        <th style="text-align: center; vertical-align: middle;width:10%;"></th>
+                                    </tr>                                    
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>011</td>
+                                        <td>Áo MonsterX street wear</td>
+                                        <td><img src="img-pd/img-1.jpg" alt=""></td>                                        
+                                        <td> 400000</td>
+                                        <td>Mình không thể lâu dài, chỉ vì tôi ngây ngô!
+                                            Thời gian sẽ minh chứng tất cả
+                                            Và cũng có thể ngoảnh đi bỏ mặc chúng ta..
+                                            Ngón tay ấy buông xuôi vì chẳng cần tôi ở bên
+                                            Đã từ chối cơ hội để đợi tôi vững vàng
+                                            Ngồi khóc giữa cơn mưa, mới thấu đâu là..
+                                            Chạm Đáy của Nỗi Đau...
+                                        </td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>Nam</td>
+                                        <td>
+                                            <button>
+                                                <a href="#" onclick="openXSP()" style="color: #000;">Xóa</a>
+                                            </button>
+                                            <button>
+                                                <a href="#" onclick="openSSP()" style="color: black;">Sửa</a>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>                    
+                </div>   
+            </div>
+        </div>
+    </div>
+    <!-- hộp thoại sửa Đơn Hàng -->
+    <div class="dialog-1" id="dialog-ssp">
+        <div style="font-size: 30px;text-align: center;">Sửa Sản Phẩm</div>
+        <div style="clear:both;height:1px ;background-color: rgb(93, 95, 96);margin-bottom: 10px;"></div>
+        <div class="h-cp-mid-1">
+            <div class="mid-c">
+                <div style="margin-left: 10px;"> Mã Sản Phẩm </div>
+                <div>
+                    <input type="text" placeholder="Mã...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Tên Sản Phẩm </div>
+                <div>
+                    <input type="text" placeholder="Tên...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;"> Size </div>
+                <select name=""  id="">
+                    <option value="">--chọn size---</option>
+                </select>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;"> Chất Liệu  </div>
+                <select name=""  id="">
+                    <option value="">--chọn chất liệu---</option>
+                </select>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Số lượng </div>
+                <div>
+                    <input type="text" placeholder="số lượng...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Giá (min)</div>
+                <div>
+                    <input type="text" placeholder="giá...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Giá (Max) </div>
+                <div>
+                    <input type="text" placeholder="giá...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Danh Mục </div>
+                <select name=""  id="">
+                    <option value="">--chọn danh mục---</option>
+                </select>
+            </div>
+            
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Nhóm</div>
+                <select name=""  id="">
+                    <option value="">--chọn nhóm sản phẩm---</option>
+                </select>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Đối tượng phù hợp</div>
+                <select name=""  id="">
+                    <option value="">--chọn đối tượng---</option>
+                </select>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Chọn Ảnh</div>
+                <form>
+                    <label for="file">Chọn tệp cần tải lên:</label>                                    
+                    <input style="background-color: #fff ; border-radius: 0;" type="file" name="file" id="file" >        
+                </form>
+            </div> 
+            <div>
+                <div class="mid-c">
+                <div style="margin-left: 10px;">Mô Tả Sản Phẩm </div>
+                <div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mô Tả Sản Phẩm Của Bạn . . ."></textarea>
+                </div>
+            </div>                  
+        </div>        
+        <div class="h-cp-dow">
+            <div class="bt-ar">
+                <button>Lưu/Sửa Sản Phẩm</button>
+            </div>
+            <div class="bt-ex">
+                <button onclick="closeSSP()">Hủy Sửa Sản Phẩm</button>
+            </div>
+        </div>    
+    </div>
+    <!-- form xóa Sản Phẩm -->
+    <div class="dialog" id="dialog-xsp">
+        <div style="font-size: 30px;text-align: center;">Xóa Sản Phẩm</div>
+        <div style="clear:both;height:1px ;background-color: rgb(93, 95, 96);"></div>
+        <div style="text-align: center;">Bạn Có Thật Sự Muốn Xóa Sản Phẩm Này </div>
+        <div class="h-cp-dow">
+            <div class="bt-ar">
+                <button>Đồng Ý Xóa Sản Phẩm</button>
+            </div>
+            <div class="bt-ex">
+                <button onclick="closeXSP()">Bỏ Xóa Sản Phẩm</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openSSP(){
+            document.getElementById("dialog-ssp").style.display="block";
+        }
+        function closeSSP(){
+            document.getElementById("dialog-ssp").style.display="none";
+        }
+        function openXSP(){
+            document.getElementById("dialog-xsp").style.display="block";
+        }
+        function closeXSP(){
+            document.getElementById("dialog-xsp").style.display="none";
+        }
+    </script>
+</body>
+</html>

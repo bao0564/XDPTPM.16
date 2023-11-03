@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Admin.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
+     integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>  
+    <div class="container-0" >    
+        <div class="head-top" style="position: sticky; top: 0;">
+            <div id="header">
+                <div >
+                    <div>
+                        <a href="Admin.html" class="logo" style="color: #cd6133;"> MyShop </a>
+                    </div>
+                    <div class="account">
+                        Tài khoản đăng nhập!
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div style="clear:both;height:1px ;background-color: #1e272e;"></div>
+        <div class="menu">
+            <div class="menu-ct">
+                <ul style="padding: 0;"> 
+                    <li><a href="Ad-Home.html">Home</a></li>
+                    <li><a href="Ad-DonHang.html"> Đơn Hàng</a></li>
+                    <li><a href="Ad-SanPham.html"> Sản Phẩm</a></li>
+                    <li><a href="Ad-DanhMuc.html"> Danh Mục Sản Phẩm</a></li>
+                    <li><a href="Ad-KhachHang.html"> Khách Hàng</a> </li>
+                    <li><a href="Ad-NhanVien.html"> Nhân Viên</a></li>
+                    <li><a href="Ad-ChatLieu.html"> Chất Liệu</a></li>
+                    <li><a href="Ad-NhomSanPham.html"> Nhóm Sản Phẩm</a></li>
+                    <li><a href="Ad-Size.html"> Size Sản Phẩm</a></li>
+                    <li><a href="Ad-Fit.html"> Fit</a></li>
+                    <li style="background-color: #cd6133;"><a href="Ad-QuangCao.html"> Quảng Cáo</a></li>
+                    <li><a href="Ad-DoanhThu.html"> Doanh Thu</a></li>
+                    <li><a href="Ad-Setting">Cài Đặt Hệ Thống</a></li>
+                </ul>
+            </div>
+            <div class="menu-cp">                
+                <div class="cp0"> 
+                    Danh Sách Quảng Cáo Sản Phẩm
+                </div>                              
+                <div class="h-cp1">
+                    <div class="h-cp-f" >
+                        <div class="h-cp-up">
+                            <div class="bt-c"><a href="#" onclick="openQC()">Tạo Quảng Cáo Mới</a></div>
+                            <div class="bt-c"><a href="">In dữ liệu </a></div>
+                            <div class="bt-c"><a href="">Xuất Excel</a></div>
+                            <div class="bt-c"><a href="">Xuất PDF</a></div>
+                            <div class="bt-c"><a href="">Xóa Tất cả</a></div>
+                        </div>      
+                        <div style="clear:both;height:1px ;background-color: #c4c4c4;"></div>
+                        <div class="h-cp-mid">
+                            <div>
+                                <input class="form-search" type="text" placeholder="Tìm Kiếm Mã Quảng Cáo/ Tên Quảng Cáo . . ." >
+                            </div>
+                            <table class="h-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width:10%;">Mã Quảng Cáo</th>
+                                        <th style="width: 20%;">Tên Quảng Cáo</th> 
+                                        <th style="width: 20%;">Ảnh Quảng Cáo</th>                                        
+                                        <th style="width: 20%;">Loại Quảng Cáo</th>   
+                                        <th style="width: 20%;">Liên Kết Quảng Cáo</th>  
+                                        <th style="text-align: center; vertical-align: middle;width:10%;"></th>
+                                    </tr>                                    
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Sản Phẩm Hot</td>
+                                        <td>
+                                            <img src="img-pd/img-1.jpg" alt="">
+                                        </td>    
+                                        <td>aib</td>   
+                                        <td>aib</td>                                                                            
+                                        <td>
+                                            <button>
+                                                <a href="#" onclick="openXQC()" style="color: black;">Xóa</a>
+                                            </button>
+                                            <button>
+                                                <a href="#" onclick="openSQC()" style="color: black;">Sửa</a>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Sản Phẩm Mới</td>
+                                        <td>
+                                            <img src="img-pd/img-1.jpg" alt="">
+                                        </td>    
+                                        <td>1</td>  
+                                        <td>b</td>                                       
+                                        <td>
+                                            <button>
+                                                <a href="#" onclick="openXQC()" style="color: black;">Xóa</a>
+                                            </button>
+                                            <button>
+                                                <a href="#" onclick="openSQC()" style="color: black;">Sửa</a>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>                    
+                </div>   
+            </div>
+        </div>
+    </div>
+    <!-- Form Thêm mới Quảng Cáo -->
+    <div class="dialog" id="dialog-qc">
+        <div style="font-size: 30px;text-align: center;">Thêm Quảng Cáo</div>
+        <div style="clear:both;height:1px ;background-color: rgb(93, 95, 96);"></div>
+        <div class="h-cp-mid-1">
+            <div class="mid-c">
+                <div style="margin-left: 10px;"> Mã Quảng Cáo </div>
+                <div>
+                    <input type="text" placeholder="Mã tự động tạo ...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Tên Quảng Cáo </div>
+                <div>
+                    <input type="text" placeholder="Tên...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Loại Quảng Cáo </div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Liên Kết Quảng Cáo </div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+            <div class="mid-c">                
+                <form>
+                    <label for="file">Chọn Ảnh</label>                                    
+                    <input style="background-color: #fff ; border-radius: 0;" type="file" name="file" id="file" >        
+                </form>
+            </div>   
+        </div>               
+        <div class="h-cp-dow">
+            <div class="bt-ar">
+                <button>Lưu/Tạo Quảng Cáo Mới</button>
+            </div>
+            <div class="bt-ex">
+                <button onclick="closeQC()">Hủy Tạo Quảng Cáo</button>
+            </div>
+       </div>
+    </div>
+    <!-- form xóa Quảng Cáo -->
+    <div class="dialog" id="dialog-xqc">
+        <div style="font-size: 30px;text-align: center;">Xóa Quảng Cáo</div>
+        <div style="clear:both;height:1px ;background-color: rgb(93, 95, 96);"></div>
+        <div style="text-align: center;">Bạn Có Thật Sự Muốn Xóa Quảng Cáo Này </div>
+        <div class="h-cp-dow">
+            <div class="bt-ar">
+                <button>Đồng Ý Xóa Quảng Cáo</button>
+            </div>
+            <div class="bt-ex">
+                <button onclick="closeXQC()">Hủy Xóa Quảng Cáo</button>
+            </div>
+       </div>
+    </div>
+    <!-- hộp thoại sửa Quảng Cáo -->
+    <div class="dialog" id="dialog-sqc">
+        <div style="font-size: 30px;text-align: center;">Sửa Quảng Cáo</div>
+        <div style="clear:both;height:1px ;background-color: rgb(93, 95, 96);"></div>
+        <div class="h-cp-mid-1">
+            <div class="mid-c">
+                <div style="margin-left: 10px;"> Mã Quảng Cáo </div>
+                <div>
+                    <input type="text" placeholder="Mã tự động tạo ...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Tên Quảng Cáo </div>
+                <div>
+                    <input type="text" placeholder="Tên...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Loại Quảng Cáo </div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Liên Kết Quảng Cáo </div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+            <div class="mid-c">                
+                <form>
+                    <label for="file">Chọn Ảnh</label>                                    
+                    <input style="background-color: #fff ; border-radius: 0;" type="file" name="file" id="file" >        
+                </form>
+            </div> 
+        </div>
+        <div class="h-cp-dow">
+            <div class="bt-ar">
+                <button>Sửa Quảng Cáo</button>
+            </div>
+            <div class="bt-ex">
+                <button onclick="closeSQC()">Hủy Sửa Quảng Cáo</button>
+            </div>
+       </div>
+    </div>
+    <!-- script cho hộp thoại -->
+    <script>
+        function openQC(){
+            document.getElementById("dialog-qc").style.display="block";
+        }
+        function closeQC(){
+            document.getElementById("dialog-qc").style.display="none";
+        }    
+        function openXQC(){
+            document.getElementById("dialog-xqc").style.display="block";
+        } 
+        function closeXQC(){
+            document.getElementById("dialog-xqc").style.display="none";
+        }
+        function openSQC(){
+            document.getElementById("dialog-sqc").style.display="block";
+        } 
+        function closeSQC(){
+            document.getElementById("dialog-sqc").style.display="none";
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Admin.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" 
+    integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ==" 
+    ="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>  
+    <div class="container-0">    
+        <div class="head-top">
+            <div id="header">
+                <div>
+                    <div>
+                        <a href="Admin.html" class="logo" style="color: #cd6133;"> MyShop </a>
+                    </div>
+                    <div class="account">
+                        Tài khoản đăng nhập!
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div style="clear:both;height:1px ;background-color: #1e272e;"></div>
+        <div class="menu">
+            <div class="menu-ct">
+                <ul style="padding: 0;"> 
+                    <li><a href="Ad-Home.html">Home</a></li>
+                    <li><a href="Ad-DonHang.html"> Đơn Hàng</a></li>
+                    <li ><a href="Ad-SanPham.html"> Sản Phẩm</a></li>
+                    <li><a href="Ad-DanhMuc.html"> Danh Mục Sản Phẩm</a></li>
+                    <li><a href="Ad-KhachHang.html"> Khách Hàng</a> </li>
+                    <li style="background-color: #cd6133;"><a href="Ad-NhanVien.html"> Nhân Viên</a></li>
+                    <li><a href="Ad-ChatLieu.html"> Chất Liệu</a></li>
+                    <li><a href="Ad-NhomSanPham.html"> Nhóm Sản Phẩm</a></li>
+                    <li><a href="Ad-Size.html"> Size Sản Phẩm</a></li>
+                    <li><a href="Ad-Fit.html"> Fit</a></li>
+                    <li><a href="Ad-QuangCao.html"> Quảng Cáo</a></li>
+                    <li><a href="Ad-DoanhThu.html"> Doanh Thu</a></li>
+                    <li><a href="Ad-Setting">Cài Đặt Hệ Thống</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-cp">                
+                <div class="cp0"> 
+                    Danh Sách Nhân Viên
+                </div>                              
+                <div class="h-cp1">
+                    <div class="h-cp-f" >
+                        <div class="h-cp-up">
+                            <div class="bt-c"><a href="#" onclick="openNV()">Tạo Nhân Viên mới</a></div>
+                            <div class="bt-c"><a href="">In dữ liệu </a></div>
+                            <div class="bt-c"><a href="">Xuất Excel</a></div>
+                            <div class="bt-c"><a href="">Xuất PDF</a></div>
+                            <div class="bt-c"><a href="">Xóa Tất cả</a></div>
+                        </div>      
+                        <div style="clear:both;height:1px ;background-color: #c4c4c4;"></div>
+                        <div class="h-cp-mid">
+                            <div>
+                                <input class="form-search" type="text" placeholder="Tìm Kiếm Mã Nhân Viên/ Tên Nhân Viên . . ." >
+                            </div>
+                            <table class="h-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width:10%;">Mã Nhân Viên</th>
+                                        <th style="width: 15%;">Tên Nhân Viên </th>
+                                        <th style="width: 10%;">Ảnh </th>
+                                        <th style="width: 10%;">Ngày Sinh </th>                                        
+                                        <th style="width: 10% ;">Số Điện Thoại </th>
+                                        <th style="width: 5% ;">Giới Tính</th>
+                                        <th style="width:10% ;">Chức Vụ</th>
+                                        <th style="text-align: center; vertical-align: middle;width:10%;"></th>
+                                    </tr>                                    
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>Đặng Minh Bảo</td>
+                                        <td>
+                                            <img src="img-pd/img-1.jpg" alt="">
+                                        </td>                                        
+                                        <td>20/11/2002</td>                                        
+                                        <td>0775368054</td>
+                                        <td>Nam</td>
+                                        <td>Quản Lý</td>
+                                        <td>
+                                            <button>
+                                                <a href="#" onclick="openXNV()" style="color: #000;">Xóa</a>
+                                            </button>
+                                            <button>
+                                                <a href="#" onclick="openSNV()" style="color: black;">Sửa</a>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>                    
+                </div>   
+            </div>
+        </div>
+    </div>
+    <!-- Hộp Thoại tạo Nhân Viên mới  -->
+    <div class="dialog" id="dialog-nv">
+        <div style="font-size: 30px;text-align: center;">Thêm Nhân Viên </div>
+        <div style="clear:both;height:1px ;background-color: rgb(93, 95, 96);"></div>
+        <div class="h-cp-mid-1">
+            <div class="mid-c">
+                <div style="margin-left: 10px;"> Mã Nhân Viên </div>
+                <div>
+                    <input type="text" placeholder="Mã tự động tạo...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Tên Nhân Viên </div>
+                <div>
+                    <input type="text" placeholder="Tên...">
+                </div>
+            </div>
+            
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Số Điện Thoại </div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Ngày Sinh</div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Giới Tính</div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Chức Vụ</div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+            <div class="mid-c">                
+                <form>
+                    <label for="file">Chọn Ảnh</label>                                    
+                    <input style="background-color: #fff ; border-radius: 0;" type="file" name="file" id="file" >        
+                </form>
+            </div>             
+        </div>               
+        <div class="h-cp-dow">
+            <div class="bt-ar">
+                <button>Lưu/Tạo Nhân Viên Mới </button>
+            </div>
+            <div class="bt-ex">
+                <button onclick="closeNV()">Hủy Tạo Nhân Viên Mới</button>
+            </div>
+       </div>
+    </div>
+    <!-- hộp thoại sửa Nhân Viên -->
+    <div class="dialog" id="dialog-snv">
+        <div style="font-size: 30px;text-align: center;">Sửa Thông Tin Nhân Viên </div>
+        <div style="clear:both;height:1px ;background-color: rgb(93, 95, 96);margin-bottom: 10px;"></div>
+        <div class="h-cp-mid-1">
+            <div class="mid-c">
+                <div style="margin-left: 10px;"> Mã Nhân Viên </div>
+                <div>
+                    <input type="text" placeholder="Mã tự động tạo...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Tên Nhân Viên </div>
+                <div>
+                    <input type="text" placeholder="Tên...">
+                </div>
+            </div>
+            
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Số Điện Thoại </div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Ngày Sinh</div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Giới Tính</div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Chức Vụ</div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+            <div class="mid-c">                
+                <form>
+                    <label for="file">Chọn Ảnh</label>                                    
+                    <input style="background-color: #fff ; border-radius: 0;" type="file" name="file" id="file" >        
+                </form>
+            </div>             
+        </div>
+        <div class="h-cp-dow">
+            <div class="bt-ar">
+                <button>Lưu/Sửa Nhân Viên</button>
+            </div>
+            <div class="bt-ex">
+                <button onclick="closeSNV()">Hủy Sửa Nhân Viên</button>
+            </div>
+        </div>
+    </div>
+    <!-- form xóa Nhân Viên -->
+    <div class="dialog" id="dialog-xnv">
+        <div style="font-size: 30px;text-align: center;">Xóa Nhân Viên</div>
+        <div style="clear:both;height:1px ;background-color: rgb(93, 95, 96);"></div>
+        <div style="text-align: center;">Bạn Có Thật Sự Muốn Xóa Nhân Viên này </div>
+        <div class="h-cp-dow">
+            <div class="bt-ar">
+                <button> Xóa Nhân Viên</button>
+            </div>
+            <div class="bt-ex">
+                <button onclick="closeXNV()">Hủy Xóa Nhân Viên</button>
+            </div>
+       </div>
+    </div>
+    <script>
+        function openNV(){
+            document.getElementById("dialog-nv").style.display="block";
+        }
+        function closeNV(){
+            document.getElementById("dialog-nv").style.display="none";
+        }
+        function openSNV(){
+            document.getElementById("dialog-snv").style.display="block";
+        }
+        function closeSNV(){
+            document.getElementById("dialog-snv").style.display="none";
+        }
+        function openXNV(){
+            document.getElementById("dialog-xnv").style.display="block";
+        }
+        function closeXNV(){
+            document.getElementById("dialog-xnv").style.display="none";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Admin.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
+     integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>  
+    <div class="container-0" >    
+        <div class="head-top" style="position: sticky; top: 0;">
+            <div id="header">
+                <div >
+                    <div>
+                        <a href="Admin.html" class="logo" style="color: #cd6133;"> MyShop </a>
+                    </div>
+                    <div class="account">
+                        Tài khoản đăng nhập!
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div style="clear:both;height:1px ;background-color: #1e272e;"></div>
+        <div class="menu">
+            <div class="menu-ct">
+                <ul style="padding: 0;"> 
+                    <li><a href="Ad-Home.html">Home</a></li>
+                    <li><a href="Ad-DonHang.html"> Đơn Hàng</a></li>
+                    <li><a href="Ad-SanPham.html"> Sản Phẩm</a></li>
+                    <li><a href="Ad-DanhMuc.html"> Danh Mục Sản Phẩm</a></li>
+                    <li><a href="Ad-KhachHang.html"> Khách Hàng</a> </li>
+                    <li><a href="Ad-NhanVien.html"> Nhân Viên</a></li>
+                    <li><a href="Ad-ChatLieu.html"> Chất Liệu</a></li>
+                    <li style="background-color: #cd6133;"><a href="Ad-NhomSanPham.html"> Nhóm Sản Phẩm</a></li>
+                    <li><a href="Ad-Size.html"> Size Sản Phẩm</a></li>
+                    <li><a href="Ad-Fit.html"> Fit</a></li>
+                    <li><a href="Ad-QuangCao.html"> Quảng Cáo</a></li>
+                    <li><a href="Ad-DoanhThu.html"> Doanh Thu</a></li>
+                    <li><a href="Ad-Setting">Cài Đặt Hệ Thống</a></li>
+                </ul>
+            </div>
+            <div class="menu-cp">                
+                <div class="cp0"> 
+                    Danh Sách Nhóm Sản Phẩm
+                </div>                              
+                <div class="h-cp1">
+                    <div class="h-cp-f" >
+                        <div class="h-cp-up">
+                            <div class="bt-c"><a href="#" onclick="openN()">Tạo Nhóm Mới</a></div>
+                            <div class="bt-c"><a href="">In dữ liệu </a></div>
+                            <div class="bt-c"><a href="">Xuất Excel</a></div>
+                            <div class="bt-c"><a href="">Xuất PDF</a></div>
+                            <div class="bt-c"><a href="">Xóa Tất cả</a></div>
+                        </div>      
+                        <div style="clear:both;height:1px ;background-color: #c4c4c4;"></div>
+                        <div class="h-cp-mid">
+                            <div>
+                                <input class="form-search" type="text" placeholder="Tìm Kiếm Mã Nhóm/ Tên Nhóm . . ." >
+                            </div>
+                            <table class="h-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width:16%;">Mã Nhóm</th>
+                                        <th style="width: 30%;">Tên Nhóm</th> 
+                                        <th style="width: 30%;">Ảnh Nhóm</th>                                         
+                                        <th style="text-align: center; vertical-align: middle;width:10%;"></th>
+                                    </tr>                                    
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Sản Phẩm Hot</td>
+                                        <td>
+                                            <img src="img-pd/img-1.jpg" alt="">
+                                        </td>                                    
+                                        <td>
+                                            <button>
+                                                <a href="#" onclick="openXN()" style="color: black;">Xóa</a>
+                                            </button>
+                                            <button>
+                                                <a href="#" onclick="openSN()" style="color: black;">Sửa</a>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Sản Phẩm Mới</td>
+                                        <td>
+                                            <img src="img-pd/img-1.jpg" alt="">
+                                        </td>                                         
+                                        <td>
+                                            <button>
+                                                <a href="#" onclick="openXN()" style="color: black;">Xóa</a>
+                                            </button>
+                                            <button>
+                                                <a href="#" onclick="openSN()" style="color: black;">Sửa</a>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>                    
+                </div>   
+            </div>
+        </div>
+    </div>
+    <!-- Form Thêm mới Nhóm -->
+    <div class="dialog" id="dialog-n">
+        <div style="font-size: 30px;text-align: center;">Thêm Nhóm</div>
+        <div style="clear:both;height:1px ;background-color: rgb(93, 95, 96);"></div>
+        <div class="h-cp-mid-1">
+            <div class="mid-c">
+                <div style="margin-left: 10px;"> Mã Nhóm </div>
+                <div>
+                    <input type="text" placeholder="Mã tự động tạo ...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Tên Nhóm </div>
+                <div>
+                    <input type="text" placeholder="Tên...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Sản Phẩm Hiển Thị </div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+            <div class="mid-c">                
+                <form>
+                    <label for="file">Chọn Ảnh</label>                                    
+                    <input style="background-color: #fff ; border-radius: 0;" type="file" name="file" id="file" >        
+                </form>
+            </div>   
+        </div>
+        <h4>Nhóm đã có</h4>
+        <div class="h-cp-up">            
+            <div class="bt-c">Sản Phẩm Mới </div>
+            <div class="bt-c">Sản Phẩm Hot</div>
+        </div>        
+        <div class="h-cp-dow">
+            <div class="bt-ar">
+                <button>Lưu/Tạo Nhóm Mới</button>
+            </div>
+            <div class="bt-ex">
+                <button onclick="closeN()">Hủy Tạo Nhóm</button>
+            </div>
+       </div>
+    </div>
+    <!-- form xóa Nhóm -->
+    <div class="dialog" id="dialog-xn">
+        <div style="font-size: 30px;text-align: center;">Xóa Nhóm</div>
+        <div style="clear:both;height:1px ;background-color: rgb(93, 95, 96);"></div>
+        <div style="text-align: center;">Bạn Có Thật Sự Muốn Xóa Nhóm Này </div>
+        <div class="h-cp-dow">
+            <div class="bt-ar">
+                <button>Đồng Ý Xóa Nhóm</button>
+            </div>
+            <div class="bt-ex">
+                <button onclick="closeXN()">Hủy Xóa Nhóm</button>
+            </div>
+       </div>
+    </div>
+    <!-- hộp thoại sửa Nhóm -->
+    <div class="dialog" id="dialog-sn">
+        <div style="font-size: 30px;text-align: center;">Sửa Nhóm</div>
+        <div style="clear:both;height:1px ;background-color: rgb(93, 95, 96);"></div>
+        <div class="h-cp-mid-1">
+            <div class="mid-c">
+                <div style="margin-left: 10px;"> Mã Nhóm </div>
+                <div>
+                    <input type="text" placeholder="Mã...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Tên Nhóm </div>
+                <div>
+                    <input type="text" placeholder="Tên...">
+                </div>
+            </div>
+        </div>
+        <div class="h-cp-dow">
+            <div class="bt-ar">
+                <button>Sửa Nhóm</button>
+            </div>
+            <div class="bt-ex">
+                <button onclick="closeSN()">Hủy Sửa Nhóm</button>
+            </div>
+       </div>
+    </div>
+    <!-- script cho hộp thoại -->
+    <script>
+        function openN(){
+            document.getElementById("dialog-n").style.display="block";
+        }
+        function closeN(){
+            document.getElementById("dialog-n").style.display="none";
+        }    
+        function openXN(){
+            document.getElementById("dialog-xn").style.display="block";
+        } 
+        function closeXN(){
+            document.getElementById("dialog-xn").style.display="none";
+        }
+        function openSN(){
+            document.getElementById("dialog-sn").style.display="block";
+        } 
+        function closeSN(){
+            document.getElementById("dialog-sn").style.display="none";
+        }
+
+    </script>
+</body>
+</html>

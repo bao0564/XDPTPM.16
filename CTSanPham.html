@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- header -->
+    <div style="position: sticky;top:0;z-index: 1;">
+        <div class="bd-header">
+            <div>
+                <ul>
+                    <li>Tài Khoản</li>
+                    <li>Thông Báo</li>
+                    <li>Hỗ Trợ</li>
+                    <li>Liên Hệ</li>                    
+                </ul>
+            </div>
+        </div>
+        <div class="header">
+            <div class="bd-logo">
+                <a href="index.html">
+                    <div class="logo">
+                        <div> MyShop</div>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <div class="form-search">
+                    <form action="">
+                        <input type="text" name="" class="search-text" placeholder="Tìm Kiếm"> 
+                    </form>
+                </div>
+                <div class="bd-dm">
+                    <ul class="dm">
+                        <li><a href="">Áo</a></li>
+                        <li><a href="">Quần</a></li>
+                        <li><a href="">Mũ</a></li>
+                        <li><a href="">Khăn</a></li>
+                        <li><a href="">Túi</a></li>
+                        <li><a href="">Giày</a></li>
+                        <li><a href="">Váy</a></li>
+                        <li><a href="">Dép</a></li>
+                        <li><a href="">Chân Váy</a></li>
+                        <li><a href="">Tất</a></li>
+                        <li><a href="">Quần Lót</a></li>
+                        <li><a href="">Áo Lót</a></li>
+                        <li><a href="">Găng Tay</a></li>
+                        <li><a href="">Kính</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bd-stap">
+                <div class="stap">                    
+                   <a href="">Giỏ Hàng</a>
+                </div>
+                <a href="">
+                    <img style="width: 60px;border-radius: 50%; border: 3px solid #fff;margin-left: 5px;" src="icon/1.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div style="clear: both;" ></div>
+    <!-- body -->
+    <div class="container">        
+        <div class="dt-product">
+            <div>
+                <div class="dt-product-img">
+                    <div class="dt-product-img-top">
+                        <img style="width: 400px;height: 380px;" src="pic/a-1.png" alt="">
+                    </div>
+                    <div class="dt-product-img-bottom">
+                        <img class="dt-singer-p" src="pic/a-1.png" alt="">
+                        <img class="dt-singer-p" src="pic/a-2.png" alt="">
+                        <img class="dt-singer-p" src="pic/a-3.png" alt="">
+                        <img class="dt-singer-p" src="pic/a1.png" alt="">
+                        <img class="dt-singer-p" src="pic/a10.png" alt="">
+                        <img class="dt-singer-p" src="pic/a11.png" alt="">
+                        <img class="dt-singer-p" src="pic/a2.png" alt="">
+                    </div>
+                </div>
+                <div class="dt-product-infor">
+                    <div>                        
+                        <div>
+                            <div class="dt-product-name"> Tên sản Phẩm </div>
+                            <div class="dt-product-dg">
+                                <div style="border-right: 1px solid #cd6133;">sao đánh giá </div>
+                                <div style="border-right: 1px solid #cd6133;">lượng đánh giá </div>
+                                <div>Số lượng bán </div>
+                            </div>
+                        </div>
+                        <div class="dt-price" style="border-bottom: 1px solid #cd6133;">
+                            <div class="fake-price">₫300.000-₫420.000</div>
+                            <div class="real-price">₫200.000-₫250.000</div>
+                            <div class="ticket-price">giảm 50%</div>
+                        </div>
+                        <div id="dt-else-row">
+                            <div class="dt-else">Bảo hiểm : </div>
+                            <div class="dt-else-text"> Bảo Hiểm Thời Trang Mới </div>
+                        </div>
+                        <div id="dt-else-row">
+                            <div class="dt-else">Vận chuyển :</div>
+                            <div class="dt-else-text">Miễn Phí Vận Chuyển</div>                            
+                        </div>
+                        <div id="dt-else-row">
+                            <div class="dt-else">Vận chuyển Từ : .....</div>
+                        </div>
+                        <div id="dt-else-row">                           
+                            <div class="dt-else">Màu sắc :</div>
+                            <button class="dt-else-color" >đen</button>
+                            <button class="dt-else-color" >Nâu</button>
+                            <button class="dt-else-color">Đỏ</button>
+                        </div>
+                        <div id="dt-else-row">                            
+                            <div class="dt-else">Kích cỡ :</div>
+                            <button class="dt-else-size" >S</button>
+                            <button class="dt-else-size">M</button>
+                            <button class="dt-else-size">L</button>
+                            <button class="dt-else-size" >XL</button>
+                        </div>
+                        <div id="dt-else-row">                            
+                            <div class="dt-else">Số lượng :</div>
+                            <div style="margin: 16px;">
+                                <div class="bt-qtt">
+                                    <button class="btlow">-<button>
+                                    <input class="btinput" type="number" value="1">
+                                    <button class="bthigh">+</button>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="bt-product">
+                        <div class="bt-card">
+                            <button>Thêm vào giỏ hàng</button>
+                        </div>
+                        <div class="bt-buy">
+                            <button>Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>        
+        <div style="clear: both;" ></div>
+        <div class="mota" style="background-color: #fff; margin: 5px;">
+            <div style="padding:30px; text-align: center;text-transform: uppercase; color:#f34f09;">mô tả sản phẩm</div>
+            <div style="padding: 0 10px;background-color: #fff; ">mô tả</div>
+        </div> 
+    </div>
+        <div style="clear: both;"></div>
+        <!-- Tất Cả Sản Phẩm -->
+        <div class="dmsp-all">
+            <div class="bd-dmsp">                
+                <div class="dmsp-m">                    
+                    <div class="sp-content">
+                        <a href=""> Sản Phẩm khác</a>
+                    </div>
+                    <div class="bd-sp">
+                        <div class="sp">
+                            <ul style="padding: 0 0 0 0;margin: 0 0 0 0;">
+                                <li>
+                                    <div class="product">
+                                        <div class="bd-pic">
+                                            <a href="">
+                                                <img src="pic/a-3.png" class="pic" style="border-bottom:3px solid #cd6133;">
+                                            </a>
+                                            <div class="bd-button">
+                                                <button class="button">
+                                                    <img src="icon/1.png" alt="" style="height: 20px;width: auto;">
+                                                </button>
+                                            </div>
+                                        </div>                                
+                                        <div class="bd-infor">
+                                            <a href="" class="product-name" title="Áo MonsterX street wear">Áo MonsterX street wear </a>
+                                            <a href="" class="product-price">200.000-240.000</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product">
+                                        <div class="bd-pic">
+                                            <a href="">
+                                                <img src="pic/a-3.png" class="pic" style="border-bottom:3px solid #cd6133;">
+                                            </a>
+                                            <div class="bd-button">
+                                                <button class="button">
+                                                    <img src="icon/1.png" alt="" style="height: 20px;width: auto;">
+                                                </button>
+                                            </div>
+                                        </div>                                
+                                        <div class="bd-infor">
+                                            <a href="" class="product-name" title="Áo MonsterX street wear">Áo MonsterX street wear </a>
+                                            <a href="" class="product-price">200.000-240.000</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product">
+                                        <div class="bd-pic">
+                                            <a href="">
+                                                <img src="pic/a-3.png" class="pic" style="border-bottom:3px solid #cd6133;">
+                                            </a>
+                                            <div class="bd-button">
+                                                <button class="button">
+                                                    <img src="icon/1.png" alt="" style="height: 20px;width: auto;">
+                                                </button>
+                                            </div>
+                                        </div>                                
+                                        <div class="bd-infor">
+                                            <a href="" class="product-name" title="Áo MonsterX street wear">Áo MonsterX street wear </a>
+                                            <a href="" class="product-price">200.000-240.000</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product">
+                                        <div class="bd-pic">
+                                            <a href="">
+                                                <img src="pic/a-3.png" class="pic" style="border-bottom:3px solid #cd6133;">
+                                            </a>
+                                            <div class="bd-button">
+                                                <button class="button">
+                                                    <img src="icon/1.png" alt="" style="height: 20px;width: auto;">
+                                                </button>
+                                            </div>
+                                        </div>                                
+                                        <div class="bd-infor">
+                                            <a href="" class="product-name" title="Áo MonsterX street wear">Áo MonsterX street wear </a>
+                                            <a href="" class="product-price">200.000-240.000</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product">
+                                        <div class="bd-pic">
+                                            <a href="">
+                                                <img src="pic/a-3.png" class="pic" style="border-bottom:3px solid #cd6133;">
+                                            </a>
+                                            <div class="bd-button">
+                                                <button class="button">
+                                                    <img src="icon/1.png" alt="" style="height: 20px;width: auto;">
+                                                </button>
+                                            </div>
+                                        </div>                                
+                                        <div class="bd-infor">
+                                            <a href="" class="product-name" title="Áo MonsterX street wear">Áo MonsterX street wear </a>
+                                            <a href="" class="product-price">200.000-240.000</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product">
+                                        <div class="bd-pic">
+                                            <a href="">
+                                                <img src="pic/a-3.png" class="pic" style="border-bottom:3px solid #cd6133;">
+                                            </a>
+                                            <div class="bd-button">
+                                                <button class="button">
+                                                    <img src="icon/1.png" alt="" style="height: 20px;width: auto;">
+                                                </button>
+                                            </div>
+                                        </div>                                
+                                        <div class="bd-infor">
+                                            <a href="" class="product-name" title="Áo MonsterX street wear">Áo MonsterX street wear </a>
+                                            <a href="" class="product-price">200.000-240.000</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product">
+                                        <div class="bd-pic">
+                                            <a href="">
+                                                <img src="pic/a-3.png" class="pic" style="border-bottom:3px solid #cd6133;">
+                                            </a>
+                                            <div class="bd-button">
+                                                <button class="button">
+                                                    <img src="icon/1.png" alt="" style="height: 20px;width: auto;">
+                                                </button>
+                                            </div>
+                                        </div>                                
+                                        <div class="bd-infor">
+                                            <a href="" class="product-name" title="Áo MonsterX street wear">Áo MonsterX street wear </a>
+                                            <a href="" class="product-price">200.000-240.000</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product">
+                                        <div class="bd-pic">
+                                            <a href="">
+                                                <img src="pic/a-3.png" class="pic" style="border-bottom:3px solid #cd6133;">
+                                            </a>
+                                            <div class="bd-button">
+                                                <button class="button">
+                                                    <img src="icon/1.png" alt="" style="height: 20px;width: auto;">
+                                                </button>
+                                            </div>
+                                        </div>                                
+                                        <div class="bd-infor">
+                                            <a href="" class="product-name" title="Áo MonsterX street wear">Áo MonsterX street wear </a>
+                                            <a href="" class="product-price">200.000-240.000</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product">
+                                        <div class="bd-pic">
+                                            <a href="">
+                                                <img src="pic/a-3.png" class="pic" style="border-bottom:3px solid #cd6133;">
+                                            </a>
+                                            <div class="bd-button">
+                                                <button class="button">
+                                                    <img src="icon/1.png" alt="" style="height: 20px;width: auto;">
+                                                </button>
+                                            </div>
+                                        </div>                                
+                                        <div class="bd-infor">
+                                            <a href="" class="product-name" title="Áo MonsterX street wear">Áo MonsterX street wear </a>
+                                            <a href="" class="product-price">200.000-240.000</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product">
+                                        <div class="bd-pic">
+                                            <a href="">
+                                                <img src="pic/a-3.png" class="pic" style="border-bottom:3px solid #cd6133;">
+                                            </a>
+                                            <div class="bd-button">
+                                                <button class="button">
+                                                    <img src="icon/1.png" alt="" style="height: 20px;width: auto;">
+                                                </button>
+                                            </div>
+                                        </div>                                
+                                        <div class="bd-infor">
+                                            <a href="" class="product-name" title="Áo MonsterX street wear">Áo MonsterX street wear </a>
+                                            <a href="" class="product-price">200.000-240.000</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product">
+                                        <div class="bd-pic">
+                                            <a href="">
+                                                <img src="pic/a-3.png" class="pic" style="border-bottom:3px solid #cd6133;">
+                                            </a>
+                                            <div class="bd-button">
+                                                <button class="button">
+                                                    <img src="icon/1.png" alt="" style="height: 20px;width: auto;">
+                                                </button>
+                                            </div>
+                                        </div>                                
+                                        <div class="bd-infor">
+                                            <a href="" class="product-name" title="Áo MonsterX street wear">Áo MonsterX street wear </a>
+                                            <a href="" class="product-price">200.000-240.000</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product">
+                                        <div class="bd-pic">
+                                            <a href="">
+                                                <img src="pic/a-3.png" class="pic" style="border-bottom:3px solid #cd6133;">
+                                            </a>
+                                            <div class="bd-button">
+                                                <button class="button">
+                                                    <img src="icon/1.png" alt="" style="height: 20px;width: auto;">
+                                                </button>
+                                            </div>
+                                        </div>                                
+                                        <div class="bd-infor">
+                                            <a href="" class="product-name" title="Áo MonsterX street wear">Áo MonsterX street wear </a>
+                                            <a href="" class="product-price">200.000-240.000</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product">
+                                        <div class="bd-pic">
+                                            <a href="">
+                                                <img src="pic/a-3.png" class="pic" style="border-bottom:3px solid #cd6133;">
+                                            </a>
+                                            <div class="bd-button">
+                                                <button class="button">
+                                                    <img src="icon/1.png" alt="" style="height: 20px;width: auto;">
+                                                </button>
+                                            </div>
+                                        </div>                                
+                                        <div class="bd-infor">
+                                            <a href="" class="product-name" title="Áo MonsterX street wear">Áo MonsterX street wear </a>
+                                            <a href="" class="product-price">200.000-240.000</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product">
+                                        <div class="bd-pic">
+                                            <a href="">
+                                                <img src="pic/a-3.png" class="pic" style="border-bottom:3px solid #cd6133;">
+                                            </a>
+                                            <div class="bd-button">
+                                                <button class="button">
+                                                    <img src="icon/1.png" alt="" style="height: 20px;width: auto;">
+                                                </button>
+                                            </div>
+                                        </div>                                
+                                        <div class="bd-infor">
+                                            <a href="" class="product-name" title="Áo MonsterX street wear">Áo MonsterX street wear </a>
+                                            <a href="" class="product-price">200.000-240.000</a>
+                                        </div>
+                                    </div>
+                                </li>  
+                                <li>
+                                    <div class="product">
+                                        <div class="bd-pic">
+                                            <a href="">
+                                                <img src="pic/a-3.png" class="pic" style="border-bottom:3px solid #cd6133;">
+                                            </a>
+                                            <div class="bd-button">
+                                                <button class="button">
+                                                    <img src="icon/1.png" alt="" style="height: 20px;width: auto;">
+                                                </button>
+                                            </div>
+                                        </div>                                
+                                        <div class="bd-infor">
+                                            <a href="" class="product-name" title="Áo MonsterX street wear">Áo MonsterX street wear </a>
+                                            <a href="" class="product-price">200.000-240.000</a>
+                                        </div>
+                                    </div>
+                                </li>  
+                                <li>
+                                    <div class="product">
+                                        <div class="bd-pic">
+                                            <a href="">
+                                                <img src="pic/a-3.png" class="pic" style="border-bottom:3px solid #cd6133;">
+                                            </a>
+                                            <div class="bd-button">
+                                                <button class="button">
+                                                    <img src="icon/1.png" alt="" style="height: 20px;width: auto;">
+                                                </button>
+                                            </div>
+                                        </div>                                
+                                        <div class="bd-infor">
+                                            <a href="" class="product-name" title="Áo MonsterX street wear">Áo MonsterX street wear </a>
+                                            <a href="" class="product-price">200.000-240.000</a>
+                                        </div>
+                                    </div>
+                                </li>  
+                                <li>
+                                    <div class="product">
+                                        <div class="bd-pic">
+                                            <a href="">
+                                                <img src="pic/a-3.png" class="pic" style="border-bottom:3px solid #cd6133;">
+                                            </a>
+                                            <div class="bd-button">
+                                                <button class="button">
+                                                    <img src="icon/1.png" alt="" style="height: 20px;width: auto;">
+                                                </button>
+                                            </div>
+                                        </div>                                
+                                        <div class="bd-infor">
+                                            <a href="" class="product-name" title="Áo MonsterX street wear">Áo MonsterX street wear </a>
+                                            <a href="" class="product-price">200.000-240.000</a>
+                                        </div>
+                                    </div>
+                                </li>  
+                                <li>
+                                    <div class="product">
+                                        <div class="bd-pic">
+                                            <a href="">
+                                                <img src="pic/a-3.png" class="pic" style="border-bottom:3px solid #cd6133;">
+                                            </a>
+                                            <div class="bd-button">
+                                                <button class="button">
+                                                    <img src="icon/1.png" alt="" style="height: 20px;width: auto;">
+                                                </button>
+                                            </div>
+                                        </div>                                
+                                        <div class="bd-infor">
+                                            <a href="" class="product-name" title="Áo MonsterX street wear">Áo MonsterX street wear </a>
+                                            <a href="" class="product-price">200.000-240.000</a>
+                                        </div>
+                                    </div>
+                                </li>                                                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="clear: both;"></div> 
+    <!-- footer -->
+    <div class="container-">
+        <div>
+            <div class="footer">
+                <div class="footer-0">
+                    <ul class="footer-logo">
+                        <a href="">MYSHOP</a>
+                    </ul>
+                </div>
+                <div class="footer-">
+                    <ul>
+                        <li class="content-text"><a href="">Áo Nam</a></li>
+                        <li><a href="" class="product-f">Áo phông</a></li>
+                        <li><a href="" class="product-f">Áo Bông</a></li>
+                        <li><a href="" class="product-f">Áo Khoác</a></li>
+                        <li><a href="" class="product-f">Áo Nỉ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-">
+                    <ul>
+                        <li class="content-text"><a href="" >Quần Nam</a></li>
+                        <li><a href="" class="product-f">Quần bò</a></li>
+                        <li><a href="" class="product-f">Quần vải</a></li>
+                        <li><a href="" class="product-f">Chân Váy</a></li>
+                        <li><a href="" class="product-f">Quần Đùi</a></li>
+                        <li><a href="" class="product-f">Quần Dài</a></li>
+                    </ul>
+                </div>
+                <div class="footer-">
+                    <ul>
+                        <li class="content-text"><a href="">Áo Nữ</a></li>
+                        <li><a href="" class="product-f">Áo phông</a></li>
+                        <li><a href="" class="product-f">Áo Bông</a></li>
+                        <li><a href="" class="product-f">Áo Khoác</a></li>
+                        <li><a href="" class="product-f">Áo Nỉ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-">
+                    <ul>
+                        <li class="content-text"><a href="">Quần Nữ</a></li>
+                        <li><a href="" class="product-f">Quần bò</a></li>
+                        <li><a href="" class="product-f">Quần vải</a></li>
+                        <li><a href="" class="product-f">Chân Váy</a></li>
+                        <li><a href="" class="product-f">Quần Đùi</a></li>
+                        <li><a href="" class="product-f">Quần Dài</a></li>
+                    </ul>
+                </div>
+                <div class="footer-">
+                    <ul>
+                        <li class="content-text"><a href="">Trợ Giúp</a></li>
+                        <li><a href="" class="product-f">Hỏi Đáp</a></li>
+                        <li><a href="LienHe.html" class="product-f">Liên Hệ</a></li>
+                        <li><a href="" class="product-f">Tin Tức</a></li>
+                    </ul>
+                </div>      
+                <div class="footer-">
+                    <ul>
+                        <li class="content-text"><a href="">Thông Tin</a></li>
+                        <li><a href="" class="product-f">Về chúng tôi</a></li>
+                        <li><a href="" class="product-f">Điều Khoản sử dụng </a></li>
+                        <li><a href="" class="product-f">Chính Sách Riêng Tư</a></li>
+                        <p> Copyright © MYSHOP </p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // nút chọn màu
+        const selectButtonColor =document.querySelectorAll(".dt-else-color");
+        selectButtonColor.forEach(ButtonColor =>{
+            ButtonColor.addEventListener("click",function(){
+                //xóa chọn tất cả các nút
+                selectButtonColor.forEach(b=>b.classList.remove("selected"));
+                //chọn nút mới 
+                ButtonColor.classList.add("selected");               
+            });
+        });
+        //nút chọn size
+        const selectButtonSize =document.querySelectorAll(".dt-else-size");
+        selectButtonSize.forEach(ButtonSize =>{
+            ButtonSize.addEventListener("click",function(){
+                //xóa chọn tất cả các nút
+                selectButtonSize.forEach(c=>c.classList.remove("selected"));
+                //chọn nút mới 
+                ButtonSize.classList.add("selected");               
+            });
+        });
+        //tăng giảm số lượng
+        const btLow = document.querySelector(".btlow");
+        const btHigh =document.querySelector(".bthigh");
+        const btInput =document.querySelector(".btinput");
+
+        btLow.addEventListener("click",function(){
+            let updateInput = parseInt(btInput.value);
+            if(updateInput>1){
+                updateInput--;
+                btInput.value=updateInput; 
+            }
+        });
+
+        btHigh.addEventListener("click",function(){
+            let updateInput =parseInt(btInput.value);
+            updateInput++;
+            btInput.value=updateInput;
+        });
+
+    </script>    
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Admin.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" 
+    integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ==" 
+    ="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>  
+    <div class="container-0">    
+        <div class="head-top">
+            <div id="header">
+                <div>
+                    <div>
+                        <a href="Admin.html" class="logo" style="color: #cd6133;"> MyShop </a>
+                    </div>
+                    <div class="account">
+                        Tài khoản đăng nhập!
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div style="clear:both;height:1px ;background-color: #1e272e;"></div>
+        <div class="menu">
+            <div class="menu-ct">
+                <ul style="padding: 0;"> 
+                    <li><a href="Ad-Home.html">Home</a></li>
+                    <li style="background-color: #cd6133;"><a href="Ad-DonHang.html"> Đơn Hàng</a></li>
+                    <li><a href="Ad-SanPham.html"> Sản Phẩm</a></li>
+                    <li><a href="Ad-DanhMuc.html"> Danh Mục Sản Phẩm</a></li>
+                    <li><a href="Ad-KhachHang.html"> Khách Hàng</a> </li>
+                    <li><a href="Ad-NhanVien.html"> Nhân Viên</a></li>                    
+                    <li><a href="Ad-ChatLieu.html"> Chất Liệu</a></li>
+                    <li><a href="Ad-NhomSanPham.html"> Nhóm Sản Phẩm</a></li>
+                    <li><a href="Ad-Size.html"> Size Sản Phẩm</a></li>
+                    <li><a href="Ad-Fit.html"> Fit</a></li>
+                    <li><a href="Ad-QuangCao.html"> Quảng Cáo</a></li>
+                    <li><a href="Ad-DoanhThu.html"> Doanh Thu</a></li>
+                    <li><a href="Ad-Setting">Cài Đặt Hệ Thống</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-cp">                
+                <div class="cp0"> 
+                    Danh sách đơn hàng
+                </div>                              
+                <div class="h-cp1">
+                    <div class="h-cp-f" >
+                        <div class="h-cp-up">
+                            <div class="bt-c"><a href="Ad-Tao-DonHang.html">Tạo đơn hàng mới</a></div>
+                            <div class="bt-c"><a href="">In dữ liệu </a></div>
+                            <div class="bt-c"><a href="">Xuất Excel</a></div>
+                            <div class="bt-c"><a href="">Xuất PDF</a></div>
+                            <div class="bt-c"><a href="">Xóa Tất cả</a></div>
+                        </div>      
+                        <div style="clear:both;height:1px ;background-color: #c4c4c4;"></div>
+                        <div class="h-cp-mid">
+                            <div>
+                                <input class="form-search" type="text" placeholder="Tìm Kiếm Mã Đơn Hàng / Tên Khách Hàng . . ." >
+                            </div>
+                            <table class="h-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width:15%;">Mã đơn hàng</th>
+                                        <th style="width: 30%;">Tên khách hàng</th>
+                                        <th style="width: 20% ;">Sản phẩm</th>
+                                        <th style="width: 10% ;">Số Lượng</th>
+                                        <th style="width:15% ;">Tổng tiền</th>
+                                        <th style="text-align: center; vertical-align: middle;width:10%;"></th>
+                                    </tr>                                    
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>011</td>
+                                        <td>Đặng Minh Bảo</td>
+                                        <td>Áo MonsterX street wear</td>
+                                        <td>
+                                            <input class="soluong" type="mumber" value="1" style="max-width: 100px;">
+                                        </td>
+                                        <td> 400000</td>
+                                        <td>
+                                            <button>
+                                                <a href="#" onclick="openXDH()" style="color: black;">Xóa</a>
+                                            </button>
+                                            <button>
+                                                <a href="#" onclick="openSDH()" style="color: black;">Sửa</a>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>                            
+                        </div>
+                    </div>                    
+                </div>   
+            </div>
+        </div>
+    </div>
+    <!-- hộp thoại sửa Đơn Hàng -->
+    <div class="dialog-1" id="dialog-sdh">
+        <div style="font-size: 30px;text-align: center;">Sửa Đơn Hàng</div>
+        <div style="clear:both;height:1px ;background-color: rgb(93, 95, 96);"></div>
+        <div class="h-cp-mid-1">
+            <div class="mid-c">
+                <div style="margin-left: 10px;"> Mã Đơn Hàng </div>
+                <div>
+                    <input placeholder="..." readonly>
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Tên Khách Hàng </div>
+                <div>
+                    <input type="text" placeholder="Tên...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Số Điện Thoại</div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;"> Sản Phẩm </div>
+                <div>
+                    <input type="text" placeholder="Tên ...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;"> Mã Sản Phẩm</div>
+                <div>
+                    <input type="text" placeholder="Mã...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Số lượng </div>
+                <div>
+                    <input type="text" placeholder="số lượng...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Ngày Tạo</div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Giá </div>
+                <div>
+                    <input type="text" placeholder="giá...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Tổng Tiền </div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+            <div class="mid-c">
+                <div style="margin-left: 10px;">Ghi Chú </div>
+                <div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mô Tả Sản Phẩm Của Bạn . . ."></textarea>
+                </div>
+            </div>
+       </div>                       
+        <div class="h-cp-dow">
+            <div class="bt-ar">
+                <button>Lưu/Sửa Đơn Hàng</button>
+            </div>
+            <div class="bt-ex">
+                <button onclick="closeSDH()">Hủy Sửa Đơn Hàng</button>
+            </div>
+        </div>
+    </div>
+    <!-- form xóa Đơn Hàng -->
+    <div class="dialog" id="dialog-xdh">
+        <div style="font-size: 30px;text-align: center;">Xóa Đơn Hàng </div>
+        <div style="clear:both;height:1px ;background-color: rgb(93, 95, 96);"></div>
+        <div style="text-align: center;">Bạn Có Thật Sự Muốn Xóa Đơn Hàng Này </div>
+        <div class="h-cp-dow">
+            <div class="bt-ar">
+                <button>Xóa Đơn Hàng </button>
+            </div>
+            <div class="bt-ex">
+                <button onclick="closeXDH()">Bỏ Xóa Đơn Hàng</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openSDH(){
+            document.getElementById("dialog-sdh").style.display="block";
+        }
+        function closeSDH(){
+            document.getElementById("dialog-sdh").style.display="none";
+        }
+        function openXDH(){
+            document.getElementById("dialog-xdh").style.display="block";
+        }
+        function closeXDH(){
+            document.getElementById("dialog-xdh").style.display="none";
+        }
+    </script>
+</body>
+</html>

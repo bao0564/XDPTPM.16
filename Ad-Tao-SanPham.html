@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Admin.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" 
+    integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ==" 
+    ="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>  
+    <div class="container-0">    
+        <div class="head-top">
+            <div id="header">
+                <div>
+                    <div>
+                        <a href="Admin.html" class="logo" style="color: #cd6133;"> MyShop </a>
+                    </div>
+                    <div class="account">
+                        Tài khoản đăng nhập!
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div style="clear:both;height:1px ;background-color: #1e272e;"></div>
+        <div class="menu">
+            <div class="menu-ct">
+                <ul style="padding: 0;"> 
+                    <li><a href="Ad-Home.html">Home</a></li>
+                    <li><a href="Ad-DonHang.html"> Đơn Hàng</a></li>
+                    <li style="background-color: #cd6133;"><a href="Ad-SanPham.html"> Sản Phẩm</a></li>
+                    <li><a href="Ad-DanhMuc.html"> Danh Mục Sản Phẩm</a></li>
+                    <li><a href="Ad-KhachHang.html"> Khách Hàng</a> </li>
+                    <li><a href="Ad-NhanVien.html"> Nhân Viên</a></li>
+                    <li><a href="Ad-ChatLieu.html"> Chất Liệu</a></li>
+                    <li><a href="Ad-NhomSanPham.html"> Nhóm Sản Phẩm</a></li>
+                    <li><a href="Ad-Size.html"> Size Sản Phẩm</a></li>
+                    <li><a href="Ad-Fit.html"> Fit</a></li>
+                    <li><a href="Ad-QuangCao.html"> Quảng Cáo</a></li>
+                    <li><a href="Ad-DoanhThu.html"> Doanh Thu</a></li>
+                    <li><a href="Ad-Setting">Cài Đặt Hệ Thống</a></li>
+                </ul>                
+            </div>
+            <div class="menu-cp">                
+                <div class="cp0"> 
+                    Thêm / Tạo Sản Phẩm mới
+                </div>                              
+                <div class="h-cp1">
+                    <div class="h-cp-f" >
+                       <div class="h-cp-up"> 
+                            <div class="bt-c"><a href="#" onclick="openDM()">Thêm Danh Mục</a></div>
+                            <div class="bt-c"><a href="#" onclick="openCL()">Thêm Chất Liệu</a></div>                            
+                            <div class="bt-c"><a href="#" onclick="openSize()">Thêm Size</a></div>
+                            <div class="bt-c"><a href="#" onclick="openFit()">Thêm Fit</a></div>
+                            <div class="bt-c"><a href="#" onclick="openNhom()">Thêm Nhóm Sản Phẩm</a></div>
+                       </div>
+                       <div style="clear:both;height:1px ;background-color: rgb(93, 95, 96);"></div>
+                       <div class="h-cp-mid-1">
+                            <div class="mid-c">
+                                <div style="margin-left: 10px;"> Mã Sản Phẩm </div>
+                                <div>
+                                    <input type="text" placeholder="Mã...">
+                                </div>
+                            </div>
+                            <div class="mid-c">
+                                <div style="margin-left: 10px;">Tên Sản Phẩm </div>
+                                <div>
+                                    <input type="text" placeholder="Tên...">
+                                </div>
+                            </div>
+                            <div class="mid-c">
+                                <div style="margin-left: 10px;"> Size </div>
+                                <select name=""  id="">
+                                    <option value="">--chọn size---</option>
+                                </select>
+                            </div>
+                            <div class="mid-c">
+                                <div style="margin-left: 10px;"> Chất Liệu  </div>
+                                <select name=""  id="">
+                                    <option value="">--chọn chất liệu---</option>
+                                </select>
+                            </div>
+                            <div class="mid-c">
+                                <div style="margin-left: 10px;">Số lượng </div>
+                                <div>
+                                    <input type="text" placeholder="số lượng...">
+                                </div>
+                            </div>
+                            <div class="mid-c">
+                                <div style="margin-left: 10px;">Giá (min)</div>
+                                <div>
+                                    <input type="text" placeholder="giá...">
+                                </div>
+                            </div>
+                            <div class="mid-c">
+                                <div style="margin-left: 10px;">Giá (Max) </div>
+                                <div>
+                                    <input type="text" placeholder="giá...">
+                                </div>
+                            </div>
+                            <div class="mid-c">
+                                <div style="margin-left: 10px;">Danh Mục </div>
+                                <select name=""  id="">
+                                    <option value="">--chọn danh mục---</option>
+                                </select>
+                            </div>
+                            <div class="mid-c">
+                                <div style="margin-left: 10px;">Mô Tả Sản Phẩm </div>
+                                <div>
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="Mô Tả Sản Phẩm Của Bạn . . ."></textarea>
+                                </div>
+                            </div>
+                            <div class="mid-c">
+                                <div style="margin-left: 10px;">Nhóm</div>
+                                <select name=""  id="">
+                                    <option value="">--chọn nhóm sản phẩm---</option>
+                                </select>
+                            </div>
+                            <div class="mid-c">
+                                <div style="margin-left: 10px;">Đối tượng phù hợp</div>
+                                <select name=""  id="">
+                                    <option value="">--chọn đối tượng---</option>
+                                </select>
+                            </div>
+                            <div class="mid-c">
+                                <div style="margin-left: 10px;">Chọn Ảnh</div>
+                                <form>
+                                    <label for="file">Chọn tệp cần tải lên:</label>                                    
+                                    <input type="file" name="file" id="file" >        
+                                </form>
+                            </div>
+                       </div>                       
+                       <div class="h-cp-dow">
+                            <div class="bt-ar">
+                                <button>Lưu/Tạo Sản Phẩm Mới</button>
+                            </div>
+                            <div class="bt-ex">
+                                <button>
+                                    <a href="Ad-SanPham.html" style="color: black;">Hủy Tạo Sản Phẩm</a>
+                                </button>
+                            </div>
+                       </div>
+                    </div>                    
+                </div>   
+            </div>
+        </div>
+    </div>
+    <!-- hộp thoại thêm danh mục -->
+    <div class="dialog" id="dialog-dm">
+        <div style="font-size: 30px;text-align: center;">Thêm Danh Mục</div>
+        <div style="clear:both;height:1px ;background-color: rgb(93, 95, 96);"></div>
+        <div>
+            <input type="text" placeholder="Thêm Danh Mục Mới ...">
+        </div>
+        <h4>Danh mục đã có</h4>
+        <div class="h-cp-up">            
+            <div class="bt-c">Áo</div>
+            <div class="bt-c">Quần</div>
+            <div class="bt-c">Váy</div>
+            <div class="bt-c">Găng Tay</div>
+        </div>        
+        <div class="h-cp-dow">
+            <div class="bt-ar">
+                <button>Lưu/Tạo Danh Mục Mới</button>
+            </div>
+            <div class="bt-ex">
+                <button onclick="closeDM()">Hủy Tạo Danh Mục</button>
+            </div>
+       </div>
+    </div>
+    <!-- Hộp Thoại thêm chất liệu -->
+    <div class="dialog" id="dialog-cl">
+        <div style="font-size: 30px;text-align: center;">Thêm Chất Liệu</div>
+        <div style="clear:both;height:1px ;background-color: rgb(93, 95, 96);"></div>
+        <div>
+            <input type="text" placeholder="Thêm Chất Liệu Mới ...">
+        </div>
+        <h4>Chất Liệu đã có</h4>
+        <div class="h-cp-up">            
+            <div class="bt-c">Vải cotton</div>
+            <div class="bt-c">Vải kaki</div>
+            <div class="bt-c">Vải jean</div>
+            <div class="bt-c">Vải Kate</div>
+        </div>    
+        <div class="h-cp-dow">
+            <div class="bt-ar">
+                <button>Lưu/Tạo Chất Liệu Mới</button>
+            </div>
+            <div class="bt-ex">
+                <button onclick="closeCL()">Hủy Tạo Chất Liệu</button>
+            </div>
+       </div>
+    </div>
+    <!-- Hộp Thoại thêm Size -->
+    <div class="dialog" id="dialog-size">
+        <div style="font-size: 30px;text-align: center;">Thêm Size Sản Phẩm </div>
+        <div style="clear:both;height:1px ;background-color: rgb(93, 95, 96);"></div>
+        <div>
+            <input type="text" placeholder="Thêm Size Sản Phẩm Mới ...">
+        </div>
+        <h4>Size đã có</h4>
+        <div class="h-cp-up">            
+            <div class="bt-c">S</div>
+            <div class="bt-c">L</div>
+            <div class="bt-c">M</div>
+            <div class="bt-c">XL</div>
+        </div>    
+        <div class="h-cp-dow">
+            <div class="bt-ar">
+                <button>Lưu/Tạo Size Mới</button>
+            </div>
+            <div class="bt-ex">
+                <button onclick="closeSize()">Hủy Tạo Size</button>
+            </div>
+       </div>
+    </div>
+    <!-- Hộp Thoại Thêm Fit -->
+    <div class="dialog" id="dialog-fit">
+        <div style="font-size: 30px;text-align: center;">Thêm Đối Tượng Cho Sản Phẩm</div>
+        <div style="clear:both;height:1px ;background-color: rgb(93, 95, 96);"></div>
+        <div>
+            <input type="text" placeholder="Thêm Đối Tượng Mới ...">
+        </div>
+        <h4>Đối Tượng đã có</h4>
+        <div class="h-cp-up">            
+            <div class="bt-c">S</div>
+            <div class="bt-c">L</div>
+            <div class="bt-c">M</div>
+            <div class="bt-c">XL</div>
+        </div>    
+        <div class="h-cp-dow">
+            <div class="bt-ar">
+                <button>Lưu/Tạo Đối Tượng Mới</button>
+            </div>
+            <div class="bt-ex">
+                <button onclick="closeFit()">Hủy Tạo Đối Tượng</button>
+            </div>
+       </div>
+    </div>
+    <!-- Hộp Thoại Thêm Nhóm Sản Phẩm -->
+    <div class="dialog" id="dialog-nhom">
+        <div style="font-size: 30px;text-align: center;">Thêm Nhóm Sản Phẩm</div>
+        <div style="clear:both;height:1px ;background-color: rgb(93, 95, 96);"></div>
+        <div>
+            <input type="text" placeholder="Thêm Nhóm Sản Phẩm Mới ...">
+        </div>
+        <h4>Nhóm Sản Phẩm đã có</h4>
+        <div class="h-cp-up">            
+            <div class="bt-c">Sản Phẩm Hot</div>
+            <div class="bt-c">Sản Phẩm Mới</div>
+            <div class="bt-c">Sản Phẩm </div>
+        </div>    
+        <div class="h-cp-dow">
+            <div class="bt-ar">
+                <button>Lưu/Tạo Nhóm Mới</button>
+            </div>
+            <div class="bt-ex">
+                <button onclick="closeNhom()">Hủy Tạo Nhóm</button>
+            </div>
+       </div>
+    </div>
+    <!-- script cho hộp thoại -->
+    <script>
+        function openDM(){
+            document.getElementById("dialog-dm").style.display="block";
+        }
+        function closeDM(){
+            document.getElementById("dialog-dm").style.display="none";
+        }
+        function openCL(){
+            document.getElementById("dialog-cl").style.display="block";
+        }
+        function closeCL(){
+            document.getElementById("dialog-cl").style.display="none";
+        }
+        function openSize(){
+            document.getElementById("dialog-size").style.display="block";
+        }
+        function closeSize(){
+            document.getElementById("dialog-size").style.display="none";
+        }
+        function openFit(){
+            document.getElementById("dialog-fit").style.display="block";
+        }
+        function closeFit(){
+            document.getElementById("dialog-fit").style.display="none";
+        }
+        function openNhom(){
+            document.getElementById("dialog-nhom").style.display="block";
+        }
+        function closeNhom(){
+            document.getElementById("dialog-nhom").style.display="none";
+        }
+    </script>
+</body>
+</html>
